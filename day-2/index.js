@@ -42,10 +42,15 @@ function countLetter(
     }
 
     // Part 2
-    if (
-        (word[lowerPosition] === target && word[upperPosition] !== target) ||
-        (word[lowerPosition] !== target && word[upperPosition] === target)
-    ) {
+    // Old method
+    // if (
+    //     (word[lowerPosition] === target && word[upperPosition] !== target) ||
+    //     (word[lowerPosition] !== target && word[upperPosition] === target)
+    // ) 
+
+    // New method
+    if((word[lowerPosition] === target) != (word[upperPosition] === target))
+    {
         partTwoValidPassword += 1;
     }
 }
