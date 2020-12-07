@@ -5,7 +5,7 @@ data = inputRaw.replace(/\n/g, " ").split("  ");
 let validPassports = 0;
 let validPassports2 = 0;
 
-// Function for solution 2
+// Function for second part
 const checkValid = (fields) => {
     let counter = 0; // Count valid fields, increase counter by 1 if valid
     for (let i = 0; i < fields.length; i++) {
@@ -84,6 +84,7 @@ const checkValid = (fields) => {
     }
 };
 
+// Part 1
 for (let i = 0; i < data.length; i++) {
     let fields = data[i].split(" ");
 
@@ -117,4 +118,4 @@ for (let i = 0; i < data.length; i++) {
 }
 
 console.log("Part one valid passport:" + validPassports);
-console.log("Part one valid passport:" + validPassports2);
+console.log("Part two valid passport:" + validPassports2);
